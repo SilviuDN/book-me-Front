@@ -77,7 +77,7 @@ function ChatRoom(props) {
           </Button>
         </Link>
       </div>
-<hr style={{ marginTop: "2em" }}/>
+      <hr style={{ marginTop: "2em" }} />
       <div className="titleChat">
         <h1 className="room-name">{book.volumeInfo?.title}</h1>
       </div>
