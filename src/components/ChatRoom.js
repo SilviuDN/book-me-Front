@@ -29,6 +29,10 @@ function ChatRoom(props) {
   };
 
   const handleSendMessage = () => {
+    if (newMessage === "" || newMessage === null) {
+      return null;
+    }
+
     sendMessage(newMessage);
     setNewMessage("");
   };
@@ -92,9 +96,11 @@ function ChatRoom(props) {
           variant="outlined"
           onChange={handleNewMessageChange}
           value={newMessage}
-          minlength="1"
           type="text"
           style={{ width: "80%" }}
+          inputProps={{
+            maxLength: 144,
+          }}
         />
         {/* <button onClick={handleSendMessage} className="send-message-button">
               Send
