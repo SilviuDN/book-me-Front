@@ -96,7 +96,8 @@ function ChatRoom(props) {
         <h1 className="room-name">{book.volumeInfo?.title}</h1>
       </div>
 
-      <div className="messages-container">
+      {
+        /* <div className="messages-container"> */ }
         <ol className="messages-list">
 
           {messages.map((message, i) => (
@@ -114,7 +115,8 @@ function ChatRoom(props) {
           <div ref={messagesEndRef} />
 
         </ol>
-      </div>
+      {
+        /* </div> */ }
       <div className="new-message-input-field">
         {/* <input
               value={newMessage}
