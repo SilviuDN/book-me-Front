@@ -67,7 +67,6 @@ console.log(books)
         onChange={handleChange}
         type="text"
         name="name"
-        value={search.name}
       />
 
       {/*<form className={classes.root} noValidate autoComplete="off">

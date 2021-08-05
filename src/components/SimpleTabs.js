@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    fontSize: "1em",
+    fontWeight: 700,
     display: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block",
