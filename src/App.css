@@ -116,13 +116,11 @@ Card:hover {
 }
 
 .chat-room-container {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
+  width: 60%;
+  height: auto;
   align-items: center;
-  background-color: #E7F2F8;
-  padding: 2em;
-
+  background-color: #e7f2f8;
+  padding: 4em;
 }
 
 .SpinTitle {
@@ -155,18 +153,21 @@ Card:hover {
   color: white;
 }
 
-
-.bookHome{
-
+.bookHome {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
-.titleChat{
-
+.titleChat {
   display: flex;
   justify-content: center;
+}
+
+
+.room-name{
+
+  font-family: "Courier New", Courier, monospace;
 
 }
+

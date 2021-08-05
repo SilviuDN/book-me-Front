@@ -77,7 +77,7 @@ function ChatRoom(props) {
           </Button>
         </Link>
       </div>
-
+<hr style={{ marginTop: "2em" }}/>
       <div className="titleChat">
         <h1 className="room-name">{book.volumeInfo?.title}</h1>
       </div>
@@ -125,6 +125,7 @@ function ChatRoom(props) {
           variant="contained"
           color="primary"
           className={classes.button}
+          id="btnRoomChat"
           endIcon={<Icon>send</Icon>}
         >
           Send
