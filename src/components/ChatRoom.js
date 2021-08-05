@@ -55,15 +55,15 @@ function ChatRoom(props) {
   };
 
 
-  // const messagesEndRef = useRef(null)
+  const messagesEndRef = useRef(null)
 
-  // const scrollToBottom = () => {
-  //   messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
-  // }
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }
 
-  // useEffect(() => {
-  //   scrollToBottom()
-  // }, [messages]);
+  useEffect(() => {
+    scrollToBottom()
+  }, [messages]);
 
 
 
@@ -111,7 +111,7 @@ function ChatRoom(props) {
             </li>
 
           ))}
-          {/* <div ref={messagesEndRef} /> */}
+          <div ref={messagesEndRef} />
 
         </ol>
       </div>
