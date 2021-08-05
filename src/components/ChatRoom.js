@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import useChat from "../useChat";
 import SpinningBook from "./RotateBook";
@@ -62,9 +63,29 @@ function ChatRoom(props) {
   return (
     <div className="chat-room-container">
       <div className="SpinTitle">
-        <div onClick={() => changeDirection()}>
+
+      <Link
+            style={{
+            textDecoration: "none",
+            }}
+            to={`/`}
+            >
+          <Button
+              variant="contained"
+              color="primary"
+              className={classes.button}
+              // endIcon={<Icon>send</Icon>}
+            >
+              Home
+          </Button>
+        </Link>
+
+
+        <div className="spinningBook" onClick={() => changeDirection()}>
           <SpinningBook spinningDirection={spinningDirection} book={book} />
         </div>
+
+
 
         <h1 className="room-name">Room: {book.volumeInfo?.title}</h1>
       </div>

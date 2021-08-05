@@ -4,6 +4,7 @@
   }
 
 .content-rotate-left {
+    margin: 0 2em;
     width: var(--rotating-pic-width);
     height: var(--rotating-pic-height);
     border-radius: 50%;
@@ -17,6 +18,7 @@
 
 
 .content-rotate-right {
+    margin: 0 2em;
     width: var(--rotating-pic-width);
     height: var(--rotating-pic-height);
     /* width: 190px;
