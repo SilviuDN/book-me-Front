@@ -9,6 +9,9 @@ body {
   /* background-color: #dfeaeb; */
 }
 header {
+  display: flex;
+  position: absolute;
+  background-position: 100%;
   font-family: "Courier New", Courier, monospace;
   font-size: 3em;
 }
@@ -72,7 +75,7 @@ header {
 
 .Allpage {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 Card:hover {
