@@ -1,11 +1,16 @@
 .App {
   text-align: center;
 }
-
-body {
-  background-color: rgb(205, 205, 199);
+.style.text{
+  font-family: "Courier New", Courier, monospace; 
 }
-
+body {
+  background-color: #dfeaeb;
+}
+header {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3em;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -51,6 +56,7 @@ body {
 
 .home-book-card {
   text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -60,7 +66,7 @@ body {
 }
 
 .home-book-card li {
-  margin: 1em;
+  margin: 2em;
 }
 
 .Allpage {
@@ -73,19 +79,20 @@ Card:hover {
 }
 
 #CardHome {
-  background-color: #79eef2;
+  background-color: #8eb2b4;
   border-radius: 25px;
-  box-shadow: 0 0 1em grey;
+  box-shadow: 0 0 1em #1e2020;
   min-width: 400px;
   min-height: 450px;
 }
 
 #CardHome:hover {
-  background-color: #60eff4;
-  box-shadow: 0 0 2em black;
+  background-color: #03989e;
+  box-shadow: 0 0 2em #161d1d;
 }
 
 .new-message-input-field {
+  font-family: "Courier New", Courier, monospace;
   position: fixed;
   top: 90vh;
   width: 50%;
@@ -94,7 +101,7 @@ Card:hover {
 .findBook {
   font-family: "Courier New", Courier, monospace;
   color: #303a4d;
-  font-size: 5em;
+  font-size: 6em;
 }
 
 .loading {
@@ -103,8 +110,9 @@ Card:hover {
 }
 
 .Logo {
-  width: 3em;
+  width: 5em;
   height: auto;
+
 }
 
 .chat-room-container {
