@@ -121,6 +121,7 @@ Card:hover {
   flex-direction: column; */
   align-items: center;
   background-color: #E7F2F8;
+  padding: 2em;
 
 }
 

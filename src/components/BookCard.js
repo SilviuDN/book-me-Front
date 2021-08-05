@@ -26,10 +26,6 @@ const useStyles = makeStyles({
     const addImgUrl = props.addImgUrl
 
     const classes = useStyles();
-    // console.log("test props", props, " and the function is ", addImgUrl)
-    // console.log("test props", Object.keys(props))
-    console.log(typeof addImageUrl)
-    // addImageUrl(imageLinks?.thumbnail)
     
 
     return (

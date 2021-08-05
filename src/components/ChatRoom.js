@@ -43,19 +43,13 @@ function ChatRoom(props) {
   useEffect(() => {
     (async function Request() {
       const res = await axios.get(
-        `https://www.googleapis.com/books/v1/volumes/${roomId}`
-        // `https://www.googleapis.com/books/v1/volumes?q="${roomId}+intitle:keyes"`
-        // `https://www.googleapis.com/books/v1/volumes?q="${roomId}"`
-        // `https://www.googleapis.com/books/v1/volumes?q=harry`
-      );
-      // console.log("From the chatRoom:", res.data)
+        `https://www.googleapis.com/books/v1/volumes/${roomId}`)
       setBook(res.data);
     })();
   }, [newMessage]);
 
   const changeDirection = () => {
     const infoUrl = book.volumeInfo.infoLink;
-    console.log(infoUrl);
     setDirection(!spinningDirection);
     window.open(`${infoUrl}`, "_blank");
   };
