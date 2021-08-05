@@ -10,7 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
-import img from "./img/Logo-circle.png";
+import img from "./img/Logo-Circle.png";
 import "../App.css";
 
 const useStyles = makeStyles((theme) => ({

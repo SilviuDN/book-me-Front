@@ -4,6 +4,8 @@ import socketIOClient from "socket.io-client";
 const NEW_CHAT_MESSAGE_EVENT = "newChatMessage"; // Name of the event
 const SOCKET_SERVER_URL = process.env.NODE_ENV === "development" ? "http://localhost:5000" : "https://back-book-me.herokuapp.com/";
 
+console.log("Im useChat --> ", SOCKET_SERVER_URL, process.env )
+
 const useChat = (roomId) => {
   const [messages, setMessages] = useState([]); // Sent and received messages
   const socketRef = useRef();
