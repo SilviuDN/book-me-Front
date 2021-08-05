@@ -157,11 +157,15 @@ Card:hover {
   font-weight: 800;
 }
 
+<<<<<<< HEAD
 .messages-container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+=======
+.messages-container {}
+>>>>>>> 32ddf2f981e712a5c43537c2a6f85591370991e5
 
 .messages-list {
   overflow: scroll;
