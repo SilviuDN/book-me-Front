@@ -54,7 +54,6 @@ function ChatRoom(props) {
     window.open(`${infoUrl}`, "_blank");
   };
 
-
   // const messagesEndRef = useRef(null)
 
   // const scrollToBottom = () => {
@@ -64,9 +63,6 @@ function ChatRoom(props) {
   // useEffect(() => {
   //   scrollToBottom()
   // }, [messages]);
-
-
-
 
   return (
     <div className="chat-room-container">
@@ -98,9 +94,7 @@ function ChatRoom(props) {
 
       <div className="messages-container">
         <ol className="messages-list">
-
           {messages.map((message, i) => (
-
             <li
               key={i}
               className={`message-item ${
@@ -109,10 +103,8 @@ function ChatRoom(props) {
             >
               {message.body}
             </li>
-
           ))}
           {/* <div ref={messagesEndRef} /> */}
-
         </ol>
       </div>
       <div className="new-message-input-field">
