@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import useChat from "../useChat";
 import SpinningBook from "./RotateBook";
@@ -29,6 +30,10 @@ function ChatRoom(props) {
   };
 
   const handleSendMessage = () => {
+    if (newMessage === "" || newMessage === null) {
+      return null;
+    }
+
     sendMessage(newMessage);
     setNewMessage("");
   };
@@ -38,30 +43,43 @@ function ChatRoom(props) {
     (async function Request() {
       const res = await axios.get(
         `https://www.googleapis.com/books/v1/volumes/${roomId}`
-        // `https://www.googleapis.com/books/v1/volumes?q="${roomId}+intitle:keyes"`
-        // `https://www.googleapis.com/books/v1/volumes?q="${roomId}"`
-        // `https://www.googleapis.com/books/v1/volumes?q=harry`
       );
-      // console.log("From the chatRoom:", res.data)
       setBook(res.data);
     })();
   }, [newMessage]);
 
   const changeDirection = () => {
     const infoUrl = book.volumeInfo.infoLink;
-    console.log(infoUrl);
     setDirection(!spinningDirection);
     window.open(`${infoUrl}`, "_blank");
   };
 
   return (
     <div className="chat-room-container">
-      <div className="SpinTitle">
-        <div onClick={() => changeDirection()}>
+      <div className="bookHome">
+        <div className="spinningBook" onClick={() => changeDirection()}>
           <SpinningBook spinningDirection={spinningDirection} book={book} />
         </div>
 
-        <h1 className="room-name">Room: {book.volumeInfo?.title}</h1>
+        <Link
+          style={{
+            textDecoration: "none",
+          }}
+          to={`/`}
+        >
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            // endIcon={<Icon>send</Icon>}
+          >
+            Home
+          </Button>
+        </Link>
+      </div>
+
+      <div className="titleChat">
+        <h1 className="room-name">{book.volumeInfo?.title}</h1>
       </div>
 
       <div className="messages-container">
@@ -92,9 +110,11 @@ function ChatRoom(props) {
           variant="outlined"
           onChange={handleNewMessageChange}
           value={newMessage}
-          minlength="1"
           type="text"
           style={{ width: "80%" }}
+          inputProps={{
+            maxLength: 144,
+          }}
         />
         {/* <button onClick={handleSendMessage} className="send-message-button">
               Send

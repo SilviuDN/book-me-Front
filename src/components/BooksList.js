@@ -13,11 +13,8 @@ const useStyles = makeStyles({
 }); 
 
 function BooksList(props) {
-  // console.log("From BooksList", typeof props.addImgUrl, )
 
   const classes = useStyles();
-
-  // console.log("Din lista numar carti:",props.books.length);
 
   return (
     <div className="home-books">

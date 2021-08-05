@@ -5,8 +5,7 @@
   font-family: "Courier New", Courier, monospace;
 }
 body {
-  background-color: #red;
-  /* background-color: #dfeaeb; */
+  background-color: #dfeaeb;
 }
 header {
   display: flex;
@@ -124,6 +123,9 @@ Card:hover {
   justify-content: center;
   flex-direction: column; */
   align-items: center;
+  background-color: #E7F2F8;
+  padding: 2em;
+
 }
 
 .SpinTitle {
@@ -154,4 +156,20 @@ Card:hover {
   word-break: break-word;
   border-radius: 20px;
   color: white;
+}
+
+
+.bookHome{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.titleChat{
+
+  display: flex;
+  justify-content: center;
+
 }

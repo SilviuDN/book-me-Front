@@ -58,8 +58,6 @@ function Home() {
     })();
   }, [search.name]);
 
-console.log(books)
-
 
   return (
     <div className="home-books">
