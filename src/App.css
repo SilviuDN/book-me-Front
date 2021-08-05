@@ -5,7 +5,8 @@
   font-family: "Courier New", Courier, monospace; 
 }
 body {
-  background-color: #dfeaeb;
+  background-color: #red;
+  /* background-color: #dfeaeb; */
 }
 header {
   font-family: "Courier New", Courier, monospace;
