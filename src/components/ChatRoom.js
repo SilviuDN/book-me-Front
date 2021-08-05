@@ -29,10 +29,11 @@ function ChatRoom(props) {
   };
 
   const handleSendMessage = () => {
+    
     if (newMessage === "" || newMessage === null) {
       return null;
     }
-
+    
     sendMessage(newMessage);
     setNewMessage("");
   };
