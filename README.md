@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# BookMe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Idea:
+You've just finished a book that really impacted you. 
+You cannot stop thinking about it and would like to discuss it. To share your feelings, opinions and to see somebody else's point of view. 
+All you have to do is join the chat room named after the book's title.
+You've surely noticed how the same story you've read 15 years ago now makes a different impression if reread.
+Imagine debating over it not only with your 15years younger self, but with friends of various ages, from different places and cultural backgrounds.
+Isn't it amazing?
 
-## Available Scripts
+## Hosts and Team:
+- The project has been presented during the Global Hackathon, august 2021 organized by IronHack Miami.
+- Team: Barbara Bateli, Gian Lucas, Jose Mendez, Silviu Valentin Dilimot Nita
 
-In the project directory, you can run:
+## Backend:
+- NodeJs
+- Socket.io
+- axios
 
-### `yarn start`
+## Frontend:
+- React
+- Material.UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Components: 
+- App
+    - Home
+        - BooksList
+            - BookCard
+    - ChatRoom
+        - RotateBook (as SpinningBook)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## APIs:
+- GoogleBooks API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Lessons learned:
+- resolving conflicts wit Git
+- data flow in React 
 
-### `yarn build`
+# Overcame challanges:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Inovations:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# BugsL:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Potential future features:
 
-### `yarn eject`
+# Presentation:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Deployment: 
+- Backend - Heroku.com
+- Frontend - Netlify.com
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Access and chat:
+https://bookme-app.netlify.app/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Getting started: 
+- to clone this repo <$ git clone https://github.com/jose-fraga/BookMe.git>
+- to chat https://bookme-app.netlify.app/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Enjoy!
