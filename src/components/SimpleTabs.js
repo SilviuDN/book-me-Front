@@ -134,8 +134,10 @@ export default function PrimarySearchAppBar(props) {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static"
-      style={{ width: "100vw", backgroundColor:"#03989e" }}>
+      <AppBar
+        position="fixed"
+        style={{ width: "100vw", backgroundColor: "#03989e" }}
+      >
         <Toolbar>
           <IconButton
             edge="start"
@@ -146,7 +148,7 @@ export default function PrimarySearchAppBar(props) {
             <img className="Logo" src={img} />
           </IconButton>
           <p className={classes.title} variant="h6" noWrap>
-            HOME
+            BookMe
           </p>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -167,7 +169,6 @@ export default function PrimarySearchAppBar(props) {
           </div>
         </Toolbar>
       </AppBar>
-
     </div>
   );
 }

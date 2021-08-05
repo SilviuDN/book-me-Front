@@ -30,11 +30,10 @@ function ChatRoom(props) {
   };
 
   const handleSendMessage = () => {
-    
     if (newMessage === "" || newMessage === null) {
       return null;
     }
-    
+
     sendMessage(newMessage);
     setNewMessage("");
   };
@@ -43,7 +42,8 @@ function ChatRoom(props) {
   useEffect(() => {
     (async function Request() {
       const res = await axios.get(
-        `https://www.googleapis.com/books/v1/volumes/${roomId}`)
+        `https://www.googleapis.com/books/v1/volumes/${roomId}`
+      );
       setBook(res.data);
     })();
   }, [newMessage]);
@@ -70,32 +70,30 @@ function ChatRoom(props) {
 
   return (
     <div className="chat-room-container">
-      <div className="SpinTitle">
-
-      <Link
-            style={{
-            textDecoration: "none",
-            }}
-            to={`/`}
-            >
-          <Button
-              variant="contained"
-              color="primary"
-              className={classes.button}
-              // endIcon={<Icon>send</Icon>}
-            >
-              Home
-          </Button>
-        </Link>
-
-
+      <div className="bookHome">
         <div className="spinningBook" onClick={() => changeDirection()}>
           <SpinningBook spinningDirection={spinningDirection} book={book} />
         </div>
 
-
-
-        <h1 className="room-name">Room: {book.volumeInfo?.title}</h1>
+        <Link
+          style={{
+            textDecoration: "none",
+          }}
+          to={`/`}
+        >
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            // endIcon={<Icon>send</Icon>}
+          >
+            Home
+          </Button>
+        </Link>
+      </div>
+<hr style={{ marginTop: "2em" }}/>
+      <div className="titleChat">
+        <h1 className="room-name">{book.volumeInfo?.title}</h1>
       </div>
 
       <div className="messages-container">
@@ -146,6 +144,7 @@ function ChatRoom(props) {
           variant="contained"
           color="primary"
           className={classes.button}
+          id="btnRoomChat"
           endIcon={<Icon>send</Icon>}
         >
           Send
