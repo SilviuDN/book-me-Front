@@ -54,19 +54,15 @@ function ChatRoom(props) {
     window.open(`${infoUrl}`, "_blank");
   };
 
+  // const messagesEndRef = useRef(null)
 
-  const messagesEndRef = useRef(null)
+  // const scrollToBottom = () => {
+  //   messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  // }
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
-  }
-
-  useEffect(() => {
-    scrollToBottom()
-  }, [messages]);
-
-
-
+  // useEffect(() => {
+  //   scrollToBottom()
+  // }, [messages]);
 
   return (
     <div className="chat-room-container">
@@ -99,9 +95,7 @@ function ChatRoom(props) {
       {
         /* <div className="messages-container"> */ }
         <ol className="messages-list">
-
           {messages.map((message, i) => (
-
             <li
               key={i}
               className={`message-item ${
@@ -110,10 +104,8 @@ function ChatRoom(props) {
             >
               {message.body}
             </li>
-
           ))}
-          <div ref={messagesEndRef} />
-
+          {/* <div ref={messagesEndRef} /> */}
         </ol>
       {
         /* </div> */ }

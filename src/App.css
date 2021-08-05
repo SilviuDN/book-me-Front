@@ -139,9 +139,8 @@ Card:hover {
   align-items: center;
 
   height: 40vh;
-  list-style-type: none;
-  padding: 0;
 }
+
 .my-message {
   display: block;
   background-color: rgb(0, 132, 255);
@@ -165,20 +164,24 @@ Card:hover {
   word-break: break-word;
   border-radius: 20px;
   color: white;
+  font-weight: 800;
 }
+
 
 .messages-container {
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.messages-list{
+
+.messages-list {
   overflow: scroll;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
   /* padding: 0 150px; */
 }
+
 .bookHome {
   display: flex;
   justify-content: space-between;
