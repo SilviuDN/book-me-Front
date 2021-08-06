@@ -87,6 +87,7 @@ function ChatRoom(props) {
             variant="contained"
             color="primary"
             className={classes.button}
+            style={{ backgroundColor: "#03989e" }}
             // endIcon={<Icon>send</Icon>}
           >
             Home
@@ -150,6 +151,7 @@ function ChatRoom(props) {
           color="primary"
           className={classes.button}
           id="btnRoomChat"
+          style={{ backgroundColor: "#03989e" }}
         >
           Send
         </Button>
