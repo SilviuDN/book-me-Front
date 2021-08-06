@@ -96,10 +96,7 @@ Card:hover {
 .new-message-input-field {
   display: flex;
   justify-content: center;
-  font-family: "Courier New",
-  Courier,
-  monospace;
-
+  font-family: "Courier New", Courier, monospace;
 }
 
 .findBook {
@@ -110,8 +107,8 @@ Card:hover {
 }
 
 .loading {
-  font-size: 2em;
-  margin-top: 2em;
+  font-size: 7em;
+  margin-top: 3em;
 }
 
 .Logo {
@@ -143,7 +140,7 @@ Card:hover {
 .my-message {
   display: block;
   background-color: rgb(0, 132, 255);
-  align-self:flex-end;
+  align-self: flex-end;
 }
 .received-message {
   display: block;
@@ -160,13 +157,11 @@ Card:hover {
   font-weight: 800;
 }
 
-
 .messages-container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
 
 .messages-list {
   overflow: scroll;
