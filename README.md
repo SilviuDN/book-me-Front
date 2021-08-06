@@ -1,4 +1,4 @@
-# BookMe
+# BookMe v1.1.1
 
 ## The Idea:
 You've just finished a book that really impacted you. 
@@ -10,7 +10,10 @@ Isn't it amazing?
 
 ## Hosts and Team:
 - The project has been presented during the Global Hackathon, august 2021 organized by IronHack Miami.
-- Team: Barbara Bateli, Gian Lucas, Jose Mendez, Silviu Valentin Dilimot Nita
+- Team: Barbara Bateli, Gian Lucas, Jose Mendez, Silviu Dilimot
+
+## Start chatting:
+https://bookme-app.netlify.app/
 
 ## Backend:
 - NodeJs
@@ -19,11 +22,12 @@ Isn't it amazing?
 
 ## Frontend:
 - React
-- Material.UI
+- Material-UI
 
 ### Components: 
 - App
     - Home
+        - SimpleTabs
         - BooksList
             - BookCard
     - ChatRoom
@@ -37,13 +41,16 @@ Isn't it amazing?
 - resolving conflicts wit Git
 - data flow in React 
 
-# Overcame challanges:
+# Overcame challenges:
 
 # Inovations:
 
 # BugsL:
 
 # Potential future features:
+- signup for premium users
+- chatBot for premium users
+- similar rooms suggestion algorithm when desired room is empty
 
 # Presentation:
 
@@ -55,7 +62,8 @@ Isn't it amazing?
 https://bookme-app.netlify.app/
 
 # Getting started: 
-- to clone this repo <$ git clone https://github.com/jose-fraga/BookMe.git>
+- to clone the client repo <$ git clone https://github.com/SantGT5/book-me-Front>
+- to clone the server repo <$ git clone https://github.com/SantGT5/book-me-Back>
 - to chat https://bookme-app.netlify.app/
 
 ## Enjoy!
