@@ -100,7 +100,8 @@ Card:hover {
 }
 
 .findBook {
-  margin-top: 5em;
+  margin-top: 14%;
+  margin-bottom: 2em;
   font-family: "Courier New", Courier, monospace;
   color: #303a4d;
   font-size: 2em;
