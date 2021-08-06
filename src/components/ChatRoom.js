@@ -5,8 +5,8 @@ import useChat from "../useChat";
 import SpinningBook from "./RotateBook";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import Icon from "@material-ui/core/Icon";
 import { makeStyles } from "@material-ui/core/styles";
+import SendIcon from "@material-ui/icons/Send";
 import "../App.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -39,10 +39,10 @@ function ChatRoom(props) {
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      handleSendMessage()
+    if (e.key === "Enter") {
+      handleSendMessage();
     }
-  }
+  };
 
   const [book, setBook] = useState([]);
   useEffect(() => {
@@ -60,14 +60,14 @@ function ChatRoom(props) {
     window.open(`${infoUrl}`, "_blank");
   };
 
-  const messagesEndRef = useRef(null)
+  const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
-  }
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
-    scrollToBottom()
+    scrollToBottom();
   }, [messages]);
 
   return (
@@ -94,27 +94,30 @@ function ChatRoom(props) {
         </Link>
       </div>
       <hr style={{ marginTop: "2em" }} />
-      <div style={{fontSize: book.volumeInfo?.title.length > 24 ? '0.8em' : '1.5em' }} className="titleChat">
+      <div
+        style={{
+          fontSize: book.volumeInfo?.title.length > 24 ? "0.8em" : "1.5em",
+        }}
+        className="titleChat"
+      >
         <h1 className="room-name">{book.volumeInfo?.title}</h1>
       </div>
 
-      {
-        /* <div className="messages-container"> */ }
-        <ol className="messages-list">
-          {messages.map((message, i) => (
-            <li
-              key={i}
-              className={`message-item ${
-                message.ownedByCurrentUser ? "my-message" : "received-message"
-              }`}
-            >
-              {message.body}
-            </li>
-          ))}
-          <div ref={messagesEndRef} />
-        </ol>
-      {
-        /* </div> */ }
+      {/* <div className="messages-container"> */}
+      <ol className="messages-list">
+        {messages.map((message, i) => (
+          <li
+            key={i}
+            className={`message-item ${
+              message.ownedByCurrentUser ? "my-message" : "received-message"
+            }`}
+          >
+            {message.body}
+          </li>
+        ))}
+        <div ref={messagesEndRef} />
+      </ol>
+      {/* </div> */}
       <div className="new-message-input-field">
         {/* <input
               value={newMessage}
@@ -128,9 +131,7 @@ function ChatRoom(props) {
           label="Menssage"
           variant="outlined"
           onChange={handleNewMessageChange}
-          onKeyDown = {
-            handleKeyDown
-          }
+          onKeyDown={handleKeyDown}
           value={newMessage}
           type="text"
           style={{ width: "80%" }}
@@ -143,12 +144,12 @@ function ChatRoom(props) {
             </button> */}
 
         <Button
+          endIcon={<SendIcon />}
           onClick={handleSendMessage}
           variant="contained"
           color="primary"
           className={classes.button}
           id="btnRoomChat"
-          endIcon={<Icon>send</Icon>}
         >
           Send
         </Button>
