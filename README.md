@@ -37,33 +37,36 @@ https://bookme-app.netlify.app/
 ## APIs:
 - GoogleBooks API
 
-# Lessons learned:
+## Lessons learned:
 - resolving conflicts wit Git
 - data flow in React 
 
-# Overcame challenges:
+## Overcame challenges:
 
-# Inovations:
+## Inovations:
 
-# BugsL:
+## BugsL:
 
-# Potential future features:
+## Potential future features:
 - signup for premium users
 - chatBot for premium users
 - similar rooms suggestion algorithm when desired room is empty
 
-# Presentation:
+## Presentation:
 
-# Deployment: 
+## Deployment: 
 - Backend - Heroku.com
 - Frontend - Netlify.com
 
-# Access and chat:
+## Access and chat:
 https://bookme-app.netlify.app/
 
-# Getting started: 
+## Getting started: 
 - to clone the client repo <$ git clone https://github.com/SantGT5/book-me-Front>
 - to clone the server repo <$ git clone https://github.com/SantGT5/book-me-Back>
 - to chat https://bookme-app.netlify.app/
+
+## Legacy version:
+<$ git clone https://github.com/jose-fraga/BookMe>
 
 ## Enjoy!
