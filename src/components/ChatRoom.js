@@ -38,6 +38,12 @@ function ChatRoom(props) {
     setNewMessage("");
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSendMessage()
+    }
+  }
+
   const [book, setBook] = useState([]);
   useEffect(() => {
     (async function Request() {
@@ -122,6 +128,9 @@ function ChatRoom(props) {
           label="Menssage"
           variant="outlined"
           onChange={handleNewMessageChange}
+          onKeyDown = {
+            handleKeyDown
+          }
           value={newMessage}
           type="text"
           style={{ width: "80%" }}
