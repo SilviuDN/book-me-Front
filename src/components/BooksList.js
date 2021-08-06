@@ -17,7 +17,7 @@ function BooksList(props) {
   const classes = useStyles();
 
   return (
-    <div className="home-books">
+    <>
       <h1 className="findBook">Let's Book about:</h1>
 
       <ul className="home-book-card">
@@ -42,7 +42,7 @@ function BooksList(props) {
           );
         })}
       </ul>
-    </div>
+    </>
   );
 }
 

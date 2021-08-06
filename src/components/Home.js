@@ -61,6 +61,7 @@ function Home() {
 
   return (
     <div className="home-books">
+
       <SimpleTabs
         onChange={handleChange}
         type="text"
@@ -71,7 +72,7 @@ function Home() {
         <TextField id="outlined-basic" onChange={ handleChange } label="Search" variant="outlined" />
   </form>*/}
 
-      <ul className="home-book-card">
+      <>
         {books.length === 0 ||
         books.length === undefined ||
         books.length === null ||
@@ -80,7 +81,7 @@ function Home() {
         ) : (
           <BooksList books={books} addImgUrl={addImgUrl} />
         )}
-      </ul>
+      </>
     </div>
   );
 }
