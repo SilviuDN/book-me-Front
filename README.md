@@ -24,7 +24,7 @@ https://bookme-app.netlify.app/
 - React
 - Material-UI
 
-### Components: 
+## Components: 
 - App
     - Home
         - SimpleTabs
@@ -53,6 +53,7 @@ https://bookme-app.netlify.app/
 - similar rooms suggestion algorithm when desired room is empty
 
 ## Presentation:
+- https://bit.ly/2Xajqtl
 
 ## Deployment: 
 - Backend - Heroku.com
