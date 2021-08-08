@@ -10,7 +10,8 @@ Isn't it amazing?
 
 ## Hosts and Team:
 - The project has been presented during the Global Hackathon, august 2021 organized by IronHack Miami.
-- Team: Barbara Bateli, Gian Lucas, Jose Mendez, Silviu Dilimot
+- Team: Barbara Bateli, Gian Lucas, Jose Mendez, Silviu Dilimot 
+- https://res.cloudinary.com/dvz9tjidq/image/upload/v1628420583/red4me/wpsuaqt34pjprnyclg6y.png
 
 ## Start chatting:
 https://bookme-app.netlify.app/
